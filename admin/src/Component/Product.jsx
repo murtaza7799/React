@@ -1,5 +1,6 @@
 import React from "react";
 import Button from '@mui/material/Button';
+import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 const Product = (props) => {
    // let counter = 5;
    const [counter, setCount]=React.useState(5);
@@ -16,21 +17,19 @@ const Product = (props) => {
     }
   
     let themeStyle ={
-     color: 'white',
+     color: counter >=5 ?  'green':'red',
      backgroundColor: props.theme,
-    
 
     }
-
-   
     return (  
         
-<div>
+<div style={themeStyle}>
 
-<h1 style={themeStyle}>{props.title}</h1>
+<h1 ><AccessTimeFilledIcon /> Counter Component{" "}</h1>
  <Button variant="contained" onClick={countDown}>-</Button> {" "+counter +" "} <Button variant="contained" onClick={countUp}>+</Button><br/>
  Current counterValue is: {counter}<br/>
  {counter <0 && <span>Count is less than zero</span>}
+
  
  <hr/>
 </div>
