@@ -26,11 +26,11 @@ const Product = (props) => {
 <div style={themeStyle}>
 
 <h1 ><AccessTimeFilledIcon /> Counter Component{" "}</h1>
- <Button variant="contained" onClick={countDown}>-</Button> {" "+counter +" "} <Button variant="contained" onClick={countUp}>+</Button><br/>
+ <Button variant="contained" onClick={countDown}>-</Button> 
+ {" "+counter +" "} 
+ <Button variant="contained" onClick={countUp}>+</Button><br/>
  Current counterValue is: {counter}<br/>
  {counter <0 && <span>Count is less than zero</span>}
-
- 
  <hr/>
 </div>
  

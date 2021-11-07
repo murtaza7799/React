@@ -24,12 +24,11 @@ function App() {
       <Product title="Counter Component" theme={theme}/>
       <Product title="Counter Component" theme={theme}/>
       <Product title="Counter Component" theme={theme}/>
-      <Product title="Counter Component"  theme={theme}/>
+      <Product title="Counter Component" theme={theme}/>
       <Product title="Counter Component" theme={theme}/>
       <Product title="Counter Component"  theme={theme}/>
       
     </div>
   );
 }
-
 export default App;
