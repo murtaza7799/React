@@ -25,7 +25,7 @@ const Product = (props) => {
         
 <div style={themeStyle}>
 
-<h1 ><AccessTimeFilledIcon /> Counter Component{" "}</h1>
+<h1 ><AccessTimeFilledIcon /> Counter Component{counter}</h1>
  <Button variant="contained" onClick={countDown}>-</Button> 
  {" "+counter +" "} 
  <Button variant="contained" onClick={countUp}>+</Button><br/>
